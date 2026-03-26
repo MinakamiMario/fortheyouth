@@ -105,13 +105,15 @@ export default function Hero() {
         </motion.span>
 
         {/* Title with blur-to-sharp TextReveal */}
-        <TextReveal
-          text={TITLE}
-          as="h1"
-          className="font-display font-bold leading-tight justify-center"
-          stagger={0.12}
-          delay={0.5}
-        />
+        <div style={{ fontSize: 'clamp(2rem, 6vw, 4.25rem)' }}>
+          <TextReveal
+            text={TITLE}
+            as="h1"
+            className="font-display font-bold leading-tight justify-center"
+            stagger={0.12}
+            delay={0.5}
+          />
+        </div>
 
         {/* Subtitle with TextReveal - smaller stagger and delay */}
         <div
@@ -128,6 +130,27 @@ export default function Hero() {
             delay={1.8}
           />
         </div>
+
+        {/* Dual CTA buttons inspired by Stitch design */}
+        <motion.div
+          className="flex flex-wrap items-center justify-center gap-4 mt-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 2.4, ease: [0.23, 1, 0.32, 1] }}
+        >
+          <a
+            href="/contact"
+            className="cta__button !text-xs"
+          >
+            Neem Contact Op
+          </a>
+          <a
+            href="/diensten"
+            className="inline-flex items-center gap-2 px-6 py-3 text-xs font-bold uppercase tracking-wider font-display border border-[rgba(82,183,136,0.3)] text-[var(--color-brand-green)] rounded-sm transition-all duration-300 hover:bg-[rgba(82,183,136,0.1)] hover:border-[var(--color-brand-green)] hover:text-white"
+          >
+            Ontdek Onze Diensten
+          </a>
+        </motion.div>
       </div>
 
       {/* Scroll indicator with pulsing green glow ring */}
