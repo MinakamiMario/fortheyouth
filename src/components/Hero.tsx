@@ -38,22 +38,21 @@ export default function Hero() {
           priority
           quality={75}
           className="object-cover"
-          style={{ opacity: 0.45, scale: 1.1 }}
+          style={{ opacity: 0.55, scale: 1.1 }}
           sizes="100vw"
         />
       </MouseParallax>
 
       {/* Animated gradient overlay instead of static gradient */}
-      <AnimatedGradient intensity="strong" />
+      <AnimatedGradient intensity="subtle" />
 
-      {/* Additional branded gradient layer */}
+      {/* Light branded gradient - keeps image visible */}
       <div
         className="absolute inset-0"
         style={{
           background: `
-            radial-gradient(ellipse 80% 60% at 20% 80%, rgba(45, 106, 79, 0.3) 0%, transparent 60%),
-            radial-gradient(ellipse 60% 50% at 80% 20%, rgba(82, 183, 136, 0.1) 0%, transparent 50%),
-            linear-gradient(180deg, rgba(27, 42, 31, 0.4) 0%, rgba(27, 42, 31, 0.6) 100%)
+            radial-gradient(ellipse 80% 60% at 20% 80%, rgba(45, 106, 79, 0.15) 0%, transparent 60%),
+            linear-gradient(180deg, rgba(27, 42, 31, 0.25) 0%, rgba(27, 42, 31, 0.45) 100%)
           `,
         }}
       />
