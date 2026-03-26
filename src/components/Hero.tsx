@@ -84,7 +84,7 @@ export default function Hero() {
         priority
         quality={75}
         className="object-cover"
-        style={{ opacity: 0.15 }}
+        style={{ opacity: 0.45 }}
         sizes="100vw"
       />
 
@@ -93,10 +93,9 @@ export default function Hero() {
         className="absolute inset-0"
         style={{
           background: `
-            radial-gradient(ellipse 80% 60% at 20% 80%, rgba(45, 106, 79, 0.4) 0%, transparent 60%),
-            radial-gradient(ellipse 60% 50% at 80% 20%, rgba(82, 183, 136, 0.15) 0%, transparent 50%),
-            radial-gradient(ellipse 90% 70% at 50% 50%, rgba(30, 45, 35, 0.6) 0%, transparent 70%),
-            linear-gradient(160deg, #1b2a1f 0%, #1e3a2a 25%, #2d6a4f 50%, #1e2d23 75%, #1b2a1f 100%)
+            radial-gradient(ellipse 80% 60% at 20% 80%, rgba(45, 106, 79, 0.3) 0%, transparent 60%),
+            radial-gradient(ellipse 60% 50% at 80% 20%, rgba(82, 183, 136, 0.1) 0%, transparent 50%),
+            linear-gradient(180deg, rgba(27, 42, 31, 0.5) 0%, rgba(27, 42, 31, 0.7) 100%)
           `,
         }}
       />

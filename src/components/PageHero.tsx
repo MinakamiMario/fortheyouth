@@ -27,7 +27,7 @@ export default function PageHero({
           priority
           quality={75}
           className="object-cover"
-          style={{ opacity: 0.12 }}
+          style={{ opacity: 0.4 }}
           sizes="100vw"
         />
       )}
@@ -37,9 +37,9 @@ export default function PageHero({
         className="absolute inset-0"
         style={{
           background: `
-            radial-gradient(ellipse 80% 60% at 20% 80%, rgba(45, 106, 79, 0.3) 0%, transparent 60%),
-            radial-gradient(ellipse 60% 50% at 80% 20%, rgba(82, 183, 136, 0.1) 0%, transparent 50%),
-            linear-gradient(160deg, #1b2a1f 0%, #1e3a2a 30%, #2d6a4f 60%, #1e2d23 100%)
+            radial-gradient(ellipse 80% 60% at 20% 80%, rgba(45, 106, 79, 0.25) 0%, transparent 60%),
+            radial-gradient(ellipse 60% 50% at 80% 20%, rgba(82, 183, 136, 0.08) 0%, transparent 50%),
+            linear-gradient(180deg, rgba(27, 42, 31, 0.45) 0%, rgba(27, 42, 31, 0.65) 100%)
           `,
         }}
       />
