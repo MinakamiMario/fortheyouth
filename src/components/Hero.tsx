@@ -29,8 +29,8 @@ export default function Hero() {
       className="relative flex items-center justify-center overflow-hidden"
       style={{ height: '100dvh' }}
     >
-      {/* Background image with mouse parallax */}
-      <MouseParallax strength={30} className="absolute inset-0">
+      {/* Background image */}
+      <div className="absolute inset-0">
         <Image
           src="/images/hero/hero-bg.jpg"
           alt=""
@@ -38,10 +38,10 @@ export default function Hero() {
           priority
           quality={75}
           className="object-cover"
-          style={{ opacity: 0.85, scale: 1.1 }}
+          style={{ opacity: 0.85 }}
           sizes="100vw"
         />
-      </MouseParallax>
+      </div>
 
       {/* Dark overlay for text readability - image stays clearly visible */}
       <div
