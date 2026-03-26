@@ -4,6 +4,7 @@ import DienstenGrid from '@/components/DienstenGrid';
 import WorkshopsSection from '@/components/WorkshopsSection';
 import CTASection from '@/components/CTASection';
 import RevealOnScroll from '@/components/RevealOnScroll';
+import TextReveal from '@/components/TextReveal';
 import { STATS } from '@/lib/constants';
 
 export default function Home() {
@@ -55,12 +56,12 @@ export default function Home() {
               style={{ marginBottom: 'var(--space-2xl)' }}
             >
               <span className="eyebrow">Onze Diensten</span>
-              <h2
-                className="font-display font-bold text-white"
-                style={{ fontSize: 'var(--text-4xl)' }}
-              >
-                Wat Wij Doen
-              </h2>
+              <TextReveal
+                text="Wat Wij Doen"
+                as="h2"
+                className="font-display font-bold text-white justify-center"
+                stagger={0.1}
+              />
             </div>
           </RevealOnScroll>
           <DienstenGrid />
@@ -83,12 +84,12 @@ export default function Home() {
           <RevealOnScroll>
             <div className="flex flex-col items-center text-center gap-4">
               <span className="eyebrow">Beschikbaarheid</span>
-              <h2
-                className="font-display font-bold text-white"
-                style={{ fontSize: 'var(--text-3xl)' }}
-              >
-                Landelijk Inzetbaar
-              </h2>
+              <TextReveal
+                text="Landelijk Inzetbaar"
+                as="h2"
+                className="font-display font-bold text-white justify-center"
+                stagger={0.1}
+              />
               <p
                 className="leading-relaxed"
                 style={{

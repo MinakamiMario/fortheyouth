@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Montserrat, Open_Sans } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
+import ScrollProgress from '@/components/ScrollProgress';
 import Footer from '@/components/Footer';
 import FloatingCTA from '@/components/FloatingCTA';
 import { SITE } from '@/lib/constants';
@@ -74,6 +75,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col">
         <Navbar />
+        <ScrollProgress />
         <main className="flex-1">{children}</main>
         <Footer />
         <FloatingCTA />
