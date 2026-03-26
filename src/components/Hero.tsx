@@ -38,24 +38,21 @@ export default function Hero() {
           priority
           quality={75}
           className="object-cover"
-          style={{ opacity: 0.55, scale: 1.1 }}
+          style={{ opacity: 0.85, scale: 1.1 }}
           sizes="100vw"
         />
       </MouseParallax>
 
-      {/* Animated gradient overlay instead of static gradient */}
-      <AnimatedGradient intensity="subtle" />
-
-      {/* Light branded gradient - keeps image visible */}
+      {/* Dark overlay for text readability - image stays clearly visible */}
       <div
         className="absolute inset-0"
         style={{
-          background: `
-            radial-gradient(ellipse 80% 60% at 20% 80%, rgba(45, 106, 79, 0.15) 0%, transparent 60%),
-            linear-gradient(180deg, rgba(27, 42, 31, 0.25) 0%, rgba(27, 42, 31, 0.45) 100%)
-          `,
+          background: `linear-gradient(180deg, rgba(27, 42, 31, 0.4) 0%, rgba(27, 42, 31, 0.55) 100%)`,
         }}
       />
+
+      {/* Subtle aurora effect on top */}
+      <AnimatedGradient intensity="subtle" />
 
       {/* Glow particles overlay */}
       <GlowParticles />
