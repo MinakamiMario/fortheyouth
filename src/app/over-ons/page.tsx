@@ -17,7 +17,7 @@ export default function OverOnsPage() {
       <PageHero
         eyebrow="Over Ons"
         title="Voor een Duurzamere Toekomst"
-        backgroundImage="/images/hero/over-ons-bg.jpg"
+        backgroundImage="/images/hero/over-ons-bg.png"
       />
 
       {/* Mission & Vision */}
